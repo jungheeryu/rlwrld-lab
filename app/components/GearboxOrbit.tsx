@@ -177,8 +177,8 @@ export default function GearboxOrbit() {
       gl={{ antialias: true }}
       dpr={[1, 2]}
     >
-      <color attach="background" args={["#020617"]} />
-      <hemisphereLight intensity={0.55} groundColor="#020617" />
+      <color attach="background" args={["#f1f5f9"]} />
+      <hemisphereLight intensity={0.7} groundColor="#e2e8f0" />
       <directionalLight position={[4, 6, 4]} intensity={1.3} />
       <pointLight position={[-4, 3, 2]} intensity={0.5} color="#8a9aaa" />
       <pointLight position={[3, -2, -2]} intensity={0.4} color="#7a8a9a" />

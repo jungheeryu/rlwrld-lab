@@ -4,68 +4,44 @@ import TitleInteraction from "./components/TitleInteraction";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#050816] px-4 py-8 font-sans text-zinc-100 sm:px-6 lg:px-8 lg:py-12">
+    <div className="grid-bg min-h-screen bg-white px-4 py-8 font-sans text-slate-800 sm:px-6 lg:px-8 lg:py-12">
       <main className="mx-auto w-full max-w-5xl">
-        <header className="border-b border-zinc-800 pb-6">
+        <header className="border-b border-slate-200 pb-6">
           <div className="flex items-start justify-between gap-4">
             <div>
               <a
                 href="https://www.rlwrld.ai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mb-4 inline-flex items-center text-xs font-medium text-zinc-400 transition hover:text-zinc-200"
+                className="mb-4 inline-flex items-center font-sans text-xs font-medium text-slate-500 transition hover:text-slate-800"
               >
                 <span className="mr-1 text-lg">←</span>
                 RLWRLD Inc.
               </a>
-              <div className="mb-3 text-xs uppercase tracking-[0.2em] text-zinc-500">
+              <div className="mb-3 font-sans text-xs uppercase tracking-[0.2em] text-slate-400">
                 March 2026 · RLWRLD Lab
               </div>
-              <h1 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl md:text-[2.6rem]">
+              <h1 className="font-display text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl md:text-[2.6rem]">
                 Humanoid After All
               </h1>
             </div>
 
             <nav
               aria-label="Language selector"
-              className="flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-950/60 px-2 py-1"
+              className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-2 py-1"
             >
               <a
                 href="/"
                 aria-current="page"
-                className="group relative inline-flex h-8 w-8 items-center justify-center rounded-full bg-zinc-900 ring-1 ring-sky-500/70 transition hover:ring-sky-400"
+                className="ring-1 ring-accent-muted-blue/70 flex h-8 w-8 items-center justify-center rounded-full bg-slate-50 transition hover:ring-accent-muted-blue"
               >
-                <Image
-                  src="/flags/en.svg"
-                  alt="English"
-                  width={24}
-                  height={24}
-                  className="rounded-full"
-                />
+                <Image src="/flags/en.svg" alt="English" width={24} height={24} className="rounded-full" />
               </a>
-              <a
-                href="/ko"
-                className="group relative inline-flex h-8 w-8 items-center justify-center rounded-full bg-zinc-900 ring-1 ring-zinc-700 transition hover:ring-emerald-400"
-              >
-                <Image
-                  src="/flags/ko.svg"
-                  alt="한국어"
-                  width={24}
-                  height={24}
-                  className="rounded-full"
-                />
+              <a href="/ko" className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-50 ring-1 ring-slate-200 transition hover:ring-emerald-400">
+                <Image src="/flags/ko.svg" alt="한국어" width={24} height={24} className="rounded-full" />
               </a>
-              <a
-                href="/ja"
-                className="group relative inline-flex h-8 w-8 items-center justify-center rounded-full bg-zinc-900 ring-1 ring-zinc-700 transition hover:ring-amber-300"
-              >
-                <Image
-                  src="/flags/ja.svg"
-                  alt="日本語"
-                  width={24}
-                  height={24}
-                  className="rounded-full"
-                />
+              <a href="/ja" className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-50 ring-1 ring-slate-200 transition hover:ring-amber-300">
+                <Image src="/flags/ja.svg" alt="日本語" width={24} height={24} className="rounded-full" />
               </a>
             </nav>
           </div>
@@ -74,11 +50,11 @@ export default function Home() {
 
         <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,2fr)]">
           <aside className="space-y-6 lg:sticky lg:top-10 lg:self-start">
-            <section className="rounded-2xl border border-sky-500/40 bg-sky-500/10 px-5 py-4 text-sm text-sky-50 shadow-[0_0_40px_rgba(56,189,248,0.35)]">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-200">
+            <section className="rounded-2xl border border-accent-muted-blue/40 bg-accent-muted-blue/10 px-5 py-4 font-serif text-sm text-slate-700 shadow-[0_0_40px_rgba(148,163,184,0.2)]">
+              <p className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-accent-muted-blue">
                 TL;DR
               </p>
-              <p className="mt-2 text-sky-50/95">
+              <p className="mt-2 text-slate-700/95">
                 The world is built for human bodies. We tried wheels, arms, and
                 task‑specific bots—but the spaces we want robots to work in are
                 stairs, doors, and shelves made for us. This piece is about why we’re
@@ -87,32 +63,24 @@ export default function Home() {
               </p>
             </section>
 
-            <section className="rounded-2xl border border-zinc-800 bg-zinc-950/40 px-5 py-4 text-sm text-zinc-300">
-              <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400">
+            <section className="rounded-2xl border border-slate-200 bg-slate-50/80 px-5 py-4 font-sans text-sm text-slate-600">
+              <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
                 Contents
               </h2>
-              <ol className="mt-3 space-y-1.5 text-xs sm:text-[13px]">
-                <li>
-                  1. Introduction: Why humanoid? The world is human‑shaped
-                </li>
-                <li>
-                  2. The Problem · Complexity · Contact · Observability · Safety
-                </li>
-                <li>
-                  3. Why Humanoids Anyway · One body, many spaces · Generalization
-                </li>
-                <li>
-                  4. Our Approach · Real‑world learning loop · From sim to floor
-                </li>
+              <ol className="mt-3 space-y-1.5 font-serif text-xs text-slate-600 sm:text-[13px]">
+                <li>1. Introduction: Why humanoid? The world is human‑shaped</li>
+                <li>2. The Problem · Complexity · Contact · Observability · Safety</li>
+                <li>3. Why Humanoids Anyway · One body, many spaces · Generalization</li>
+                <li>4. Our Approach · Real‑world learning loop · From sim to floor</li>
                 <li>5. Validation · Live humanoid systems · Benchmarks that hit the floor</li>
                 <li>6. Conclusion · Humanoid after all</li>
               </ol>
             </section>
           </aside>
 
-          <article className="space-y-10 text-sm leading-relaxed text-zinc-300 sm:text-[15px]">
+          <article className="space-y-10 font-serif text-sm leading-relaxed text-slate-700 sm:text-[15px]">
             <section>
-              <h2 className="text-lg font-semibold text-zinc-50">
+              <h2 className="font-display text-lg font-semibold text-slate-900">
                 1. Introduction: Why humanoid?
               </h2>
               <ChapterGraphic kind="intro" />
@@ -130,7 +98,7 @@ export default function Home() {
                 math changes.
               </p>
               <p className="mt-3">
-                We’re betting on the humanoid form—<span className="font-medium text-sky-300">humanoid after all</span>—because
+                We’re betting on the humanoid form—<span className="font-medium text-accent-muted-blue">humanoid after all</span>—because
                 the world is already human‑shaped. This piece is about why that bet
                 matters, what makes it hard, and how we’re building the loop that lets
                 humanoids learn in the real world, not just in simulation.
@@ -138,12 +106,9 @@ export default function Home() {
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-zinc-50">2. The Problem</h2>
+              <h2 className="font-display text-lg font-semibold text-slate-900">2. The Problem</h2>
               <ChapterGraphic kind="problem" />
-
-              <h3 className="mt-4 text-sm font-semibold text-zinc-100">
-                Complexity
-              </h3>
+              <h3 className="mt-4 font-sans text-sm font-semibold text-slate-800">Complexity</h3>
               <p className="mt-2">
                 A humanoid has dozens of joints, two hands, and a balance problem. Every
                 step is underactuated. Every reach couples posture and grip. Most
@@ -152,8 +117,7 @@ export default function Home() {
                 real world means dealing with high‑dimensional, contact‑rich dynamics
                 that are hard to model and expensive to sample.
               </p>
-
-              <h3 className="mt-5 text-sm font-semibold text-zinc-100">Contact</h3>
+              <h3 className="mt-5 font-sans text-sm font-semibold text-slate-800">Contact</h3>
               <p className="mt-2">
                 Humanoids don’t float. They stand, push, and grasp. Contact isn’t a
                 side effect—it’s the primary channel for doing work. In sim, contact is
@@ -162,10 +126,7 @@ export default function Home() {
                 in the way. You can’t domain‑randomize your way out of that; you need
                 a loop that learns from real contact, safely.
               </p>
-
-              <h3 className="mt-5 text-sm font-semibold text-zinc-100">
-                Observability &amp; Safety
-              </h3>
+              <h3 className="mt-5 font-sans text-sm font-semibold text-slate-800">Observability &amp; Safety</h3>
               <p className="mt-2">
                 Full‑body state is never perfectly observed. Cameras occlude. Joint
                 encoders drift. And because humanoids share space with people, safety
@@ -177,14 +138,9 @@ export default function Home() {
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-zinc-50">
-                3. Why Humanoids Anyway
-              </h2>
+              <h2 className="font-display text-lg font-semibold text-slate-900">3. Why Humanoids Anyway</h2>
               <ChapterGraphic kind="why" />
-
-              <h3 className="mt-4 text-sm font-semibold text-zinc-100">
-                One body, many spaces
-              </h3>
+              <h3 className="mt-4 font-sans text-sm font-semibold text-slate-800">One body, many spaces</h3>
               <p className="mt-2">
                 Warehouses, factories, and homes weren’t designed for robots. They were
                 designed for humans. Stairs, door widths, counter heights, and tool
@@ -198,8 +154,7 @@ export default function Home() {
                 that walks the aisle can climb a ladder, open a door, or pick from a
                 shelf. One body, many places.
               </p>
-
-              <h3 className="mt-5 text-sm font-semibold text-zinc-100">Generalization</h3>
+              <h3 className="mt-5 font-sans text-sm font-semibold text-slate-800">Generalization</h3>
               <p className="mt-2">
                 Task‑specific robots excel at one thing and one context. Humanoids are
                 harder to build and tune—but the payoff is a form factor that
@@ -210,7 +165,7 @@ export default function Home() {
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-zinc-50">4. Our Approach</h2>
+              <h2 className="font-display text-lg font-semibold text-slate-900">4. Our Approach</h2>
               <ChapterGraphic kind="solution" />
               <p className="mt-3">
                 At RLWRLD, we’re building the loop that lets humanoids learn in the
@@ -219,10 +174,7 @@ export default function Home() {
                 same discipline as software: bounded runs, full telemetry, and fast
                 rollback.
               </p>
-
-              <h3 className="mt-5 text-sm font-semibold text-zinc-100">
-                Real‑world learning loop
-              </h3>
+              <h3 className="mt-5 font-sans text-sm font-semibold text-slate-800">Real‑world learning loop</h3>
               <p className="mt-2">
                 We treat the floor as a programmable environment. Scenarios (walk,
                 grasp, carry, recover) are defined as graphs; every joint, sensor, and
@@ -231,10 +183,7 @@ export default function Home() {
                 policy and hope,” we run many small, bounded experiments and learn from
                 real contact and real failure.
               </p>
-
-              <h3 className="mt-5 text-sm font-semibold text-zinc-100">
-                From sim to floor
-              </h3>
+              <h3 className="mt-5 font-sans text-sm font-semibold text-slate-800">From sim to floor</h3>
               <p className="mt-2">
                 Sim is still where we do most of our sample‑heavy training. But the
                 sim‑to‑real gap for humanoids is brutal: balance, contact, and
@@ -247,12 +196,9 @@ export default function Home() {
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-zinc-50">5. Validation</h2>
+              <h2 className="font-display text-lg font-semibold text-slate-900">5. Validation</h2>
               <ChapterGraphic kind="validation" />
-
-              <h3 className="mt-4 text-sm font-semibold text-zinc-100">
-                Live humanoid systems
-              </h3>
+              <h3 className="mt-4 font-sans text-sm font-semibold text-slate-800">Live humanoid systems</h3>
               <p className="mt-2">
                 On active humanoid deployments, we track real‑world episodes per day,
                 experiment turnaround from idea to results on real hardware, and
@@ -261,10 +207,7 @@ export default function Home() {
                 tempo: can a small team keep humanoids learning on the floor without
                 burning out?
               </p>
-
-              <h3 className="mt-5 text-sm font-semibold text-zinc-100">
-                Benchmarks that hit the floor
-              </h3>
+              <h3 className="mt-5 font-sans text-sm font-semibold text-slate-800">Benchmarks that hit the floor</h3>
               <p className="mt-2">
                 We use benchmarks that map clearly to real humanoid tasks: locomotion,
                 manipulation, and recovery. The ones that matter are the ones that
@@ -276,7 +219,7 @@ export default function Home() {
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-zinc-50">6. Conclusion</h2>
+              <h2 className="font-display text-lg font-semibold text-slate-900">6. Conclusion</h2>
               <ChapterGraphic kind="conclusion" />
               <p className="mt-3">
                 The world is human‑shaped. We can keep building one robot per task and
@@ -292,12 +235,12 @@ export default function Home() {
             </section>
           </article>
 
-          <footer className="mt-12 border-t border-zinc-800 pt-6 text-center text-xs text-zinc-500">
+          <footer className="mt-12 border-t border-slate-200 pt-6 text-center font-sans text-xs text-slate-500">
             <a
               href="https://www.rlwrld.ai/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 transition hover:text-zinc-200"
+              className="text-slate-600 transition hover:text-slate-900"
             >
               RLWRLD Inc.
             </a>

@@ -41,10 +41,10 @@ export default function ChapterGraphic({ kind }: ChapterGraphicProps) {
       onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
       aria-label="Toggle chapter infographic state"
-      className="group relative mt-3 flex h-32 w-full items-center justify-center overflow-hidden rounded-2xl border border-zinc-700/80 bg-zinc-950/70 text-left outline-none ring-0 transition hover:border-zinc-500 hover:bg-zinc-900/80 focus-visible:ring-2 focus-visible:ring-sky-400/70 sm:h-36"
+      className="group relative mt-3 flex h-32 w-full items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/90 text-left outline-none ring-0 transition hover:border-slate-300 hover:bg-slate-100/90 focus-visible:ring-2 focus-visible:ring-accent-muted-blue/50 sm:h-36"
     >
       <div
-        className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${accent} opacity-60 mix-blend-screen`}
+        className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${accent} opacity-40 mix-blend-multiply`}
       />
       <div className="relative flex h-full w-full items-stretch justify-stretch gap-4 px-5">
         {kind === "intro" && (
